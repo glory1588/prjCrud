@@ -1,0 +1,18 @@
+Usuario(Gloria):
+  name:Gloria
+  email:nuevo
+  contrasena:nada
+  anonacimiento:2000
+  
+Usuario(maria):
+  name:maria
+  email:nuevomm
+  contrasena=nadamm
+  anonacimiento:2000
+  
+    
+Usuario(alberto):
+  name:alberto
+  email:nuevoa
+  contrasena=nadaa
+  anonacimiento:2000

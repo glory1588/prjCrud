@@ -1,0 +1,894 @@
+Listening for transport dt_socket at address: 8000
+23:30:39,797 INFO  ~ Starting C:\temp\play\play-1.4.5\prjCrud
+23:30:40,602 WARN  ~ You're running Play! in DEV mode
+23:30:40,918 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+~ Server is up and running
+23:30:49,418 INFO  ~ Application 'prjCrud' is now started !
+23:34:23,243 INFO  ~ Restart: Path has changed
+23:34:23,600 ERROR ~ 
+
+@7h1hg1f2n
+usuario.form action not found
+
+Action not found
+Action usuario.form could not be found. Error raised is Controller controllers.usuario not found
+
+play.exceptions.ActionNotFoundException: Action usuario.form not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:578)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:84)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.usuario not found
+	... 3 more
+23:34:29,480 ERROR ~ 
+
+@7h1hg1f2p
+Internal Server Error (500) for request GET /usuarios/form
+
+Template not found (In /app/controllers/Usuarios.java around line 18)
+The template Usuarios/form.html does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : Usuarios/form.html
+	at play.mvc.Controller.renderTemplate(Controller.java:845)
+	at play.mvc.Controller.renderTemplate(Controller.java:814)
+	at play.mvc.Controller.render(Controller.java:876)
+	at controllers.Usuarios.form(Usuarios.java:18)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:536)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:473)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:467)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:436)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:159)
+	at Invocation.HTTP Request(Play!)
+23:54:28,466 INFO  ~ Restart: 1 classes changed, caused by: java.lang.UnsupportedOperationException: class redefinition failed: attempted to change the schema (add/remove fields)
+23:54:29,081 INFO  ~ Connected to jdbc:h2:C:\temp\play\play-1.4.5\prjCrud\db\h2\play;MODE=MYSQL for default
+23:56:09,094 ERROR ~ 
+
+@7h1hg1f30
+Internal Server Error (500) for request GET /usuarios/form
+
+Compilation error (In /app/controllers/Usuarios.java around line 23)
+The file /app/controllers/Usuarios.java could not be compiled. Error raised is : The method save() is undefined for the type Usuario
+
+play.exceptions.CompilationException: The method save() is undefined for the type Usuario
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:264)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:678)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:522)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:300)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:288)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:317)
+	at play.Play.detectChanges(Play.java:641)
+	at play.Invoker$Invocation.init(Invoker.java:209)
+	at Invocation.HTTP Request(Play!)
+23:59:02,521 INFO  ~ Restart: 2 classes changed, caused by: java.lang.UnsupportedOperationException: class redefinition failed: attempted to change superclass or interfaces
+23:59:02,962 INFO  ~ HHH000262: Table not found: Usuario
+23:59:02,966 INFO  ~ HHH000262: Table not found: Usuario
+23:59:02,967 INFO  ~ HHH000262: Table not found: Usuario
+00:02:47,211 ERROR ~ Restart: Need to restart Play because C:\temp\play\play-1.4.5\prjCrud\conf\application.conf has been changed
+java.lang.RuntimeException: Need to restart Play because C:\temp\play\play-1.4.5\prjCrud\conf\application.conf has been changed
+	at play.ConfigurationChangeWatcherPlugin.onConfigurationFileChanged(ConfigurationChangeWatcherPlugin.java:34)
+	at play.ConfigurationChangeWatcherPlugin.detectChange(ConfigurationChangeWatcherPlugin.java:28)
+	at play.plugins.PluginCollection.detectChange(PluginCollection.java:598)
+	at play.Play.detectChanges(Play.java:644)
+	at play.Invoker$Invocation.init(Invoker.java:209)
+	at Invocation.HTTP Request(Play!)
+00:02:47,326 ERROR ~ 
+
+@7h1hg1f31
+Internal Server Error (500) for request GET /usuarios/form?usu.name=55&usu.email=555&usu.contrase%C3%B1a=55&usu.anoNacimiento=5
+
+Oops: UnsupportedOperationException
+Unexpected error : Unexpected Error, caused by exception UnsupportedOperationException: I do not know which hibernate dialect to use with null and I cannot guess it, use the property jpa.dialect in config file
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.Play.start(Play.java:571)
+	at play.Play.detectChanges(Play.java:662)
+	at play.Invoker$Invocation.init(Invoker.java:209)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.UnsupportedOperationException: I do not know which hibernate dialect to use with null and I cannot guess it, use the property jpa.dialect in config file
+	at play.db.jpa.JPAPlugin.getDefaultDialect(JPAPlugin.java:253)
+	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:179)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:616)
+	at play.Play.start(Play.java:541)
+	... 3 more
+00:03:18,478 ERROR ~ Restart: Need to restart Play because C:\temp\play\play-1.4.5\prjCrud\conf\application.conf has been changed
+java.lang.RuntimeException: Need to restart Play because C:\temp\play\play-1.4.5\prjCrud\conf\application.conf has been changed
+	at play.ConfigurationChangeWatcherPlugin.onConfigurationFileChanged(ConfigurationChangeWatcherPlugin.java:34)
+	at play.ConfigurationChangeWatcherPlugin.detectChange(ConfigurationChangeWatcherPlugin.java:28)
+	at play.plugins.PluginCollection.detectChange(PluginCollection.java:598)
+	at play.Play.detectChanges(Play.java:644)
+	at play.Invoker$Invocation.init(Invoker.java:209)
+	at Invocation.HTTP Request(Play!)
+00:03:18,614 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL for default
+00:03:18,663 INFO  ~ HHH000262: Table not found: Usuario
+00:03:18,668 INFO  ~ HHH000262: Table not found: Usuario
+00:03:18,669 INFO  ~ HHH000262: Table not found: Usuario
+00:08:09,239 INFO  ~ Restart: 1 classes changed, caused by: java.lang.UnsupportedOperationException: class redefinition failed: attempted to change the schema (add/remove fields)
+00:12:14,611 WARN  ~ SQL Error: 42102, SQLState: 42S02
+00:12:14,611 ERROR ~ Tabla "USUARIO" no encontrada
+Table "USUARIO" not found; SQL statement:
+insert into Usuario (id, anoNacimiento, contraseña, email, name) values (null, ?, ?, ?, ?) [42102-193]
+00:12:14,677 ERROR ~ 
+
+@7h1hg1f32
+Internal Server Error (500) for request GET /usuarios/salvar?usu.name=666&usu.email=555&usu.contrase%C3%B1a=555&usu.anoNacimiento=5
+
+Execution exception (In /app/controllers/Usuarios.java around line 23)
+PersistenceException occurred : org.hibernate.exception.SQLGrammarException: could not prepare statement
+
+play.exceptions.JavaExecutionException: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:485)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:467)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:436)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:159)
+	at Invocation.HTTP Request(Play!)
+Caused by: javax.persistence.PersistenceException: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1387)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1310)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1316)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:881)
+	at play.db.jpa.JPABase._save(JPABase.java:35)
+	at play.db.jpa.GenericModel.save(GenericModel.java:232)
+	at controllers.Usuarios.salvar(Usuarios.java:23)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:536)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:473)
+	... 4 more
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:123)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:49)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:124)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:193)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareStatement(StatementPreparerImpl.java:115)
+	at org.hibernate.id.IdentityGenerator$GetGeneratedKeysDelegate.prepare(IdentityGenerator.java:89)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:55)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2987)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3499)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:81)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:395)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:229)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:209)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:193)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:321)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:286)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:192)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:125)
+	at org.hibernate.ejb.event.EJB3PersistEventListener.saveWithGeneratedId(EJB3PersistEventListener.java:78)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:208)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:151)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:78)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:772)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:746)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:750)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:875)
+	... 9 more
+Caused by: org.h2.jdbc.JdbcSQLException: Tabla "USUARIO" no encontrada
+Table "USUARIO" not found; SQL statement:
+insert into Usuario (id, anoNacimiento, contraseña, email, name) values (null, ?, ?, ?, ?) [42102-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.Parser.readTableOrView(Parser.java:5389)
+	at org.h2.command.Parser.readTableOrView(Parser.java:5366)
+	at org.h2.command.Parser.parseInsert(Parser.java:1053)
+	at org.h2.command.Parser.parsePrepared(Parser.java:413)
+	at org.h2.command.Parser.parse(Parser.java:317)
+	at org.h2.command.Parser.parse(Parser.java:289)
+	at org.h2.command.Parser.prepareCommand(Parser.java:254)
+	at org.h2.engine.Session.prepareLocal(Session.java:561)
+	at org.h2.engine.Session.prepareCommand(Session.java:502)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1203)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:73)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:287)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1137)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$2.doPrepare(StatementPreparerImpl.java:117)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:183)
+	... 31 more
+00:12:58,455 WARN  ~ SQL Error: 42102, SQLState: 42S02
+00:12:58,455 ERROR ~ Tabla "USUARIO" no encontrada
+Table "USUARIO" not found; SQL statement:
+insert into Usuario (id, anoNacimiento, contraseña, email, name) values (null, ?, ?, ?, ?) [42102-193]
+00:12:58,465 ERROR ~ 
+
+@7h1hg1f33
+Internal Server Error (500) for request GET /usuarios/salvar?usu.name=666&usu.email=555&usu.contrase%C3%B1a=555&usu.anoNacimiento=5
+
+Execution exception (In /app/controllers/Usuarios.java around line 23)
+PersistenceException occurred : org.hibernate.exception.SQLGrammarException: could not prepare statement
+
+play.exceptions.JavaExecutionException: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:485)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:467)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:436)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:159)
+	at Invocation.HTTP Request(Play!)
+Caused by: javax.persistence.PersistenceException: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1387)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1310)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1316)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:881)
+	at play.db.jpa.JPABase._save(JPABase.java:35)
+	at play.db.jpa.GenericModel.save(GenericModel.java:232)
+	at controllers.Usuarios.salvar(Usuarios.java:23)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:536)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:473)
+	... 4 more
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:123)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:49)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:124)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:193)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareStatement(StatementPreparerImpl.java:115)
+	at org.hibernate.id.IdentityGenerator$GetGeneratedKeysDelegate.prepare(IdentityGenerator.java:89)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:55)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2987)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3499)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:81)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:395)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:229)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:209)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:193)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:321)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:286)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:192)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:125)
+	at org.hibernate.ejb.event.EJB3PersistEventListener.saveWithGeneratedId(EJB3PersistEventListener.java:78)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:208)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:151)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:78)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:772)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:746)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:750)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:875)
+	... 9 more
+Caused by: org.h2.jdbc.JdbcSQLException: Tabla "USUARIO" no encontrada
+Table "USUARIO" not found; SQL statement:
+insert into Usuario (id, anoNacimiento, contraseña, email, name) values (null, ?, ?, ?, ?) [42102-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.Parser.readTableOrView(Parser.java:5389)
+	at org.h2.command.Parser.readTableOrView(Parser.java:5366)
+	at org.h2.command.Parser.parseInsert(Parser.java:1053)
+	at org.h2.command.Parser.parsePrepared(Parser.java:413)
+	at org.h2.command.Parser.parse(Parser.java:317)
+	at org.h2.command.Parser.parse(Parser.java:289)
+	at org.h2.command.Parser.prepareCommand(Parser.java:254)
+	at org.h2.engine.Session.prepareLocal(Session.java:561)
+	at org.h2.engine.Session.prepareCommand(Session.java:502)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1203)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:73)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:287)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1137)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$2.doPrepare(StatementPreparerImpl.java:117)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:183)
+	... 31 more
+00:13:40,651 WARN  ~ SQL Error: 42102, SQLState: 42S02
+00:13:40,651 ERROR ~ Tabla "USUARIO" no encontrada
+Table "USUARIO" not found; SQL statement:
+insert into Usuario (id, anoNacimiento, contraseña, email, name) values (null, ?, ?, ?, ?) [42102-193]
+00:13:40,669 ERROR ~ 
+
+@7h1hg1f34
+Internal Server Error (500) for request GET /usuarios/salvar?usu.name=5&usu.email=5&usu.contrase%C3%B1a=5&usu.anoNacimiento=5
+
+Execution exception (In /app/controllers/Usuarios.java around line 23)
+PersistenceException occurred : org.hibernate.exception.SQLGrammarException: could not prepare statement
+
+play.exceptions.JavaExecutionException: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:485)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:467)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:436)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:159)
+	at Invocation.HTTP Request(Play!)
+Caused by: javax.persistence.PersistenceException: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1387)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1310)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1316)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:881)
+	at play.db.jpa.JPABase._save(JPABase.java:35)
+	at play.db.jpa.GenericModel.save(GenericModel.java:232)
+	at controllers.Usuarios.salvar(Usuarios.java:23)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:536)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:473)
+	... 4 more
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:123)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:49)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:124)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:193)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareStatement(StatementPreparerImpl.java:115)
+	at org.hibernate.id.IdentityGenerator$GetGeneratedKeysDelegate.prepare(IdentityGenerator.java:89)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:55)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2987)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3499)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:81)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:395)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:229)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:209)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:193)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:321)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:286)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:192)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:125)
+	at org.hibernate.ejb.event.EJB3PersistEventListener.saveWithGeneratedId(EJB3PersistEventListener.java:78)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:208)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:151)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:78)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:772)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:746)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:750)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:875)
+	... 9 more
+Caused by: org.h2.jdbc.JdbcSQLException: Tabla "USUARIO" no encontrada
+Table "USUARIO" not found; SQL statement:
+insert into Usuario (id, anoNacimiento, contraseña, email, name) values (null, ?, ?, ?, ?) [42102-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.Parser.readTableOrView(Parser.java:5389)
+	at org.h2.command.Parser.readTableOrView(Parser.java:5366)
+	at org.h2.command.Parser.parseInsert(Parser.java:1053)
+	at org.h2.command.Parser.parsePrepared(Parser.java:413)
+	at org.h2.command.Parser.parse(Parser.java:317)
+	at org.h2.command.Parser.parse(Parser.java:289)
+	at org.h2.command.Parser.prepareCommand(Parser.java:254)
+	at org.h2.engine.Session.prepareLocal(Session.java:561)
+	at org.h2.engine.Session.prepareCommand(Session.java:502)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1203)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:73)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:287)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1137)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$2.doPrepare(StatementPreparerImpl.java:117)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:183)
+	... 31 more
+00:15:01,784 INFO  ~ Restart: 1 classes changed, caused by: java.lang.UnsupportedOperationException: class redefinition failed: attempted to change the schema (add/remove fields)
+00:15:01,876 INFO  ~ HHH000262: Table not found: Usuario
+00:15:01,877 INFO  ~ HHH000262: Table not found: Usuario
+00:15:01,877 INFO  ~ HHH000262: Table not found: Usuario
+00:19:31,811 INFO  ~ Restart: 1 classes changed, caused by: java.lang.UnsupportedOperationException: class redefinition failed: attempted to change the schema (add/remove fields)
+17:32:55,533 INFO  ~ Restart: 1 classes changed, caused by: java.lang.UnsupportedOperationException: class redefinition failed: attempted to change the schema (add/remove fields)
+17:33:02,091 ERROR ~ 
+
+@7h1hg1f35
+usuarios.@Usuarios.editar(u.id) action not found
+
+Action not found
+Action usuarios.@Usuarios.editar(u.id) could not be found. Error raised is Controller controllers.usuarios.@Usuarios.editar(u not found
+
+play.exceptions.ActionNotFoundException: Action usuarios.@Usuarios.editar(u.id) not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:578)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:84)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.usuarios.@Usuarios.editar(u not found
+	... 3 more
+17:33:38,283 ERROR ~ 
+
+@7h1hg1f36
+Internal Server Error (500) for request GET /usuarios/editar?id=1
+
+Template execution error (In /app/views/Usuarios/form.html around line 4)
+Execution error occurred in template /app/views/Usuarios/form.html. Exception raised was NullPointerException : Cannot get property 'name' on null object.
+
+play.exceptions.TemplateExecutionException: Cannot get property 'name' on null object
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:83)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:280)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:203)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:28)
+	at play.mvc.Controller.renderTemplate(Controller.java:836)
+	at play.mvc.Controller.renderTemplate(Controller.java:814)
+	at controllers.Usuarios.editar(Usuarios.java:37)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:536)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:473)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:467)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:436)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:159)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot get property 'name' on null object
+	at /app/views/Usuarios/form.html.(line:4)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:255)
+	... 12 more
+17:44:21,975 ERROR ~ 
+
+@7h1hg1f39
+Internal Server Error (500) for request GET /usuarios/listar
+
+No route found (In /app/views/main.html around line 13)
+No route able to invoke action Usuarios.lista was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:79)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:265)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:290)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:203)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:28)
+	at play.mvc.Controller.renderTemplate(Controller.java:836)
+	at play.mvc.Controller.renderTemplate(Controller.java:814)
+	at play.mvc.Controller.render(Controller.java:876)
+	at controllers.Usuarios.listar(Usuarios.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:536)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:473)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:467)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:436)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:159)
+	at Invocation.HTTP Request(Play!)
+17:49:07,924 INFO  ~ Restart: 1 classes changed, caused by: java.lang.UnsupportedOperationException: class redefinition failed: attempted to change the schema (add/remove fields)
+17:52:37,158 ERROR ~ Restart: Need to restart Play because C:\temp\play\play-1.4.5\prjCrud\conf\application.conf has been changed
+java.lang.RuntimeException: Need to restart Play because C:\temp\play\play-1.4.5\prjCrud\conf\application.conf has been changed
+	at play.ConfigurationChangeWatcherPlugin.onConfigurationFileChanged(ConfigurationChangeWatcherPlugin.java:34)
+	at play.ConfigurationChangeWatcherPlugin.detectChange(ConfigurationChangeWatcherPlugin.java:28)
+	at play.plugins.PluginCollection.detectChange(PluginCollection.java:598)
+	at play.Play.detectChanges(Play.java:644)
+	at play.Invoker$Invocation.init(Invoker.java:209)
+	at Invocation.HTTP Request(Play!)
+17:52:37,391 INFO  ~ Connected to jdbc:h2:C:\temp\play\play-1.4.5\prjCrud\db\h2\play;MODE=MYSQL for default
+17:56:25,965 ERROR ~ Restart: Need to restart Play because C:\temp\play\play-1.4.5\prjCrud\conf\application.conf has been changed
+java.lang.RuntimeException: Need to restart Play because C:\temp\play\play-1.4.5\prjCrud\conf\application.conf has been changed
+	at play.ConfigurationChangeWatcherPlugin.onConfigurationFileChanged(ConfigurationChangeWatcherPlugin.java:34)
+	at play.ConfigurationChangeWatcherPlugin.detectChange(ConfigurationChangeWatcherPlugin.java:28)
+	at play.plugins.PluginCollection.detectChange(PluginCollection.java:598)
+	at play.Play.detectChanges(Play.java:644)
+	at play.Invoker$Invocation.init(Invoker.java:209)
+	at Invocation.HTTP Request(Play!)
+17:56:26,257 ERROR ~ Database [default] Cannot connected to the database : Cannot load connection class because of underlying exception: 'java.lang.NumberFormatException: For input string: "como_ANTES@localhost"'.
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Cannot load connection class because of underlying exception: 'java.lang.NumberFormatException: For input string: "como_ANTES@localhost"'.
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:918)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:336)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:270)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:127)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:616)
+	at play.Play.start(Play.java:541)
+	at play.Play.detectChanges(Play.java:662)
+	at play.Invoker$Invocation.init(Invoker.java:209)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NumberFormatException: For input string: "como_ANTES@localhost"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at com.mysql.jdbc.NonRegisteringDriver.port(NonRegisteringDriver.java:823)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	... 8 more
+17:56:26,296 ERROR ~ 
+
+@7h1hg1f3a
+Internal Server Error (500) for request GET /usuarios/listar
+
+Database error
+A database error occurred : Cannot connected to the database[default], Cannot load connection class because of underlying exception: 'java.lang.NumberFormatException: For input string: "como_ANTES@localhost"'.
+
+play.exceptions.DatabaseException: Cannot connected to the database[default], Cannot load connection class because of underlying exception: 'java.lang.NumberFormatException: For input string: "como_ANTES@localhost"'.
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:212)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:616)
+	at play.Play.start(Play.java:541)
+	at play.Play.detectChanges(Play.java:662)
+	at play.Invoker$Invocation.init(Invoker.java:209)
+	at Invocation.HTTP Request(Play!)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Cannot load connection class because of underlying exception: 'java.lang.NumberFormatException: For input string: "como_ANTES@localhost"'.
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:918)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:336)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:270)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:127)
+	... 5 more
+Caused by: java.lang.NumberFormatException: For input string: "como_ANTES@localhost"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at com.mysql.jdbc.NonRegisteringDriver.port(NonRegisteringDriver.java:823)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	... 8 more
+17:57:12,569 ERROR ~ Restart: Need to restart Play because C:\temp\play\play-1.4.5\prjCrud\conf\application.conf has been changed
+java.lang.RuntimeException: Need to restart Play because C:\temp\play\play-1.4.5\prjCrud\conf\application.conf has been changed
+	at play.ConfigurationChangeWatcherPlugin.onConfigurationFileChanged(ConfigurationChangeWatcherPlugin.java:34)
+	at play.ConfigurationChangeWatcherPlugin.detectChange(ConfigurationChangeWatcherPlugin.java:28)
+	at play.plugins.PluginCollection.detectChange(PluginCollection.java:598)
+	at play.Play.detectChanges(Play.java:644)
+	at play.Invoker$Invocation.init(Invoker.java:209)
+	at Invocation.HTTP Request(Play!)
+17:57:13,675 ERROR ~ Database [default] Cannot connected to the database : Access denied for user 'root'@'localhost' (using password: YES)
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:129)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:616)
+	at play.Play.start(Play.java:541)
+	at play.Play.detectChanges(Play.java:662)
+	at play.Invoker$Invocation.init(Invoker.java:209)
+	at Invocation.HTTP Request(Play!)
+17:57:13,768 ERROR ~ 
+
+@7h1hg1f3b
+Internal Server Error (500) for request GET /usuarios/listar
+
+Database error
+A database error occurred : Cannot connected to the database[default], Access denied for user 'root'@'localhost' (using password: YES)
+
+play.exceptions.DatabaseException: Cannot connected to the database[default], Access denied for user 'root'@'localhost' (using password: YES)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:212)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:616)
+	at play.Play.start(Play.java:541)
+	at play.Play.detectChanges(Play.java:662)
+	at play.Invoker$Invocation.init(Invoker.java:209)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:129)
+	... 5 more
+17:57:16,062 ERROR ~ Database [default] Cannot connected to the database : Access denied for user 'root'@'localhost' (using password: YES)
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:129)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:616)
+	at play.Play.start(Play.java:541)
+	at play.Play.detectChanges(Play.java:659)
+	at play.Invoker$Invocation.init(Invoker.java:209)
+	at Invocation.HTTP Request(Play!)
+17:57:16,108 ERROR ~ 
+
+@7h1hg1f3c
+Internal Server Error (500) for request GET /usuarios/listar
+
+Database error
+A database error occurred : Cannot connected to the database[default], Access denied for user 'root'@'localhost' (using password: YES)
+
+play.exceptions.DatabaseException: Cannot connected to the database[default], Access denied for user 'root'@'localhost' (using password: YES)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:212)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:616)
+	at play.Play.start(Play.java:541)
+	at play.Play.detectChanges(Play.java:659)
+	at play.Invoker$Invocation.init(Invoker.java:209)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:129)
+	... 5 more
+17:57:30,940 ERROR ~ Restart: Need to restart Play because C:\temp\play\play-1.4.5\prjCrud\conf\application.conf has been changed
+java.lang.RuntimeException: Need to restart Play because C:\temp\play\play-1.4.5\prjCrud\conf\application.conf has been changed
+	at play.ConfigurationChangeWatcherPlugin.onConfigurationFileChanged(ConfigurationChangeWatcherPlugin.java:34)
+	at play.ConfigurationChangeWatcherPlugin.detectChange(ConfigurationChangeWatcherPlugin.java:28)
+	at play.plugins.PluginCollection.detectChange(PluginCollection.java:598)
+	at play.Play.detectChanges(Play.java:644)
+	at play.Invoker$Invocation.init(Invoker.java:209)
+	at Invocation.HTTP Request(Play!)
+17:57:31,019 ERROR ~ Database [default] Cannot connected to the database : Access denied for user 'root'@'localhost' (using password: YES)
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:129)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:616)
+	at play.Play.start(Play.java:541)
+	at play.Play.detectChanges(Play.java:662)
+	at play.Invoker$Invocation.init(Invoker.java:209)
+	at Invocation.HTTP Request(Play!)
+17:57:31,059 ERROR ~ 
+
+@7h1hg1f3d
+Internal Server Error (500) for request GET /usuarios/listar
+
+Database error
+A database error occurred : Cannot connected to the database[default], Access denied for user 'root'@'localhost' (using password: YES)
+
+play.exceptions.DatabaseException: Cannot connected to the database[default], Access denied for user 'root'@'localhost' (using password: YES)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:212)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:616)
+	at play.Play.start(Play.java:541)
+	at play.Play.detectChanges(Play.java:662)
+	at play.Invoker$Invocation.init(Invoker.java:209)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:129)
+	... 5 more
+17:57:35,665 ERROR ~ Database [default] Cannot connected to the database : Access denied for user 'root'@'localhost' (using password: YES)
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:129)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:616)
+	at play.Play.start(Play.java:541)
+	at play.Play.detectChanges(Play.java:659)
+	at play.Invoker$Invocation.init(Invoker.java:209)
+	at Invocation.HTTP Request(Play!)
+17:57:35,693 ERROR ~ 
+
+@7h1hg1f3e
+Internal Server Error (500) for request GET /usuarios/listar
+
+Database error
+A database error occurred : Cannot connected to the database[default], Access denied for user 'root'@'localhost' (using password: YES)
+
+play.exceptions.DatabaseException: Cannot connected to the database[default], Access denied for user 'root'@'localhost' (using password: YES)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:212)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:616)
+	at play.Play.start(Play.java:541)
+	at play.Play.detectChanges(Play.java:659)
+	at play.Invoker$Invocation.init(Invoker.java:209)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at play.db.DBPlugin.onApplicationStart(DBPlugin.java:129)
+	... 5 more
+17:57:45,953 ERROR ~ Restart: Need to restart Play because C:\temp\play\play-1.4.5\prjCrud\conf\application.conf has been changed
+java.lang.RuntimeException: Need to restart Play because C:\temp\play\play-1.4.5\prjCrud\conf\application.conf has been changed
+	at play.ConfigurationChangeWatcherPlugin.onConfigurationFileChanged(ConfigurationChangeWatcherPlugin.java:34)
+	at play.ConfigurationChangeWatcherPlugin.detectChange(ConfigurationChangeWatcherPlugin.java:28)
+	at play.plugins.PluginCollection.detectChange(PluginCollection.java:598)
+	at play.Play.detectChanges(Play.java:644)
+	at play.Invoker$Invocation.init(Invoker.java:209)
+	at Invocation.HTTP Request(Play!)
+17:57:46,901 INFO  ~ Connected to jdbc:mysql://localhost/dbqueen?useUnicode=yes&connectionCollation=utf8_general_ci&characterEncoding=UTF-8 for default
+17:57:47,961 INFO  ~ HHH000262: Table not found: Usuario
+17:57:47,964 INFO  ~ HHH000262: Table not found: Usuario
+17:57:47,966 INFO  ~ HHH000262: Table not found: Usuario
+18:32:18,570 ERROR ~ 
+
+@7h1hg1f3h
+Internal Server Error (500) for request GET /usuarios/listar
+
+No route found (In /app/views/main.html around line 23)
+No route able to invoke action public.div was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:79)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:265)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:290)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:203)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:28)
+	at play.mvc.Controller.renderTemplate(Controller.java:836)
+	at play.mvc.Controller.renderTemplate(Controller.java:814)
+	at play.mvc.Controller.render(Controller.java:876)
+	at controllers.Usuarios.listar(Usuarios.java:31)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:536)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:473)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:467)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:436)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:159)
+	at Invocation.HTTP Request(Play!)
+18:32:34,986 ERROR ~ 
+
+@7h1hg1f3k
+Internal Server Error (500) for request GET /
+
+No route found (In /app/views/main.html around line 23)
+No route able to invoke action public.div was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:79)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:265)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:290)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:203)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:28)
+	at play.mvc.Controller.renderTemplate(Controller.java:836)
+	at play.mvc.Controller.renderTemplate(Controller.java:814)
+	at play.mvc.Controller.render(Controller.java:876)
+	at controllers.Application.index(Application.java:9)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:536)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:473)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:467)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:436)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:159)
+	at Invocation.HTTP Request(Play!)
+18:34:23,880 ERROR ~ 
+
+@7h1hg1f3l
+Internal Server Error (500) for request GET /
+
+Template compilation error (In /app/views/main.html around line 25)
+The template /app/views/main.html does not compile : unexpected token: public 
+
+play.exceptions.TemplateCompilationException: unexpected token: public 
+	at play.templates.GroovyTemplate.compile(GroovyTemplate.java:181)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:219)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:290)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:203)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:28)
+	at play.mvc.Controller.renderTemplate(Controller.java:836)
+	at play.mvc.Controller.renderTemplate(Controller.java:814)
+	at play.mvc.Controller.render(Controller.java:876)
+	at controllers.Application.index(Application.java:9)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:536)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:473)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:467)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:436)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:159)
+	at Invocation.HTTP Request(Play!)
+18:34:39,268 ERROR ~ 
+
+@7h1hg1f3m
+stylesheets.tooplate-style.css action not found
+
+Action not found
+Action stylesheets.tooplate-style.css could not be found. Error raised is Controller controllers.stylesheets.tooplate-style not found
+
+play.exceptions.ActionNotFoundException: Action stylesheets.tooplate-style.css not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:578)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:84)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.stylesheets.tooplate-style not found
+	... 3 more
+18:34:39,374 ERROR ~ 
+
+@7h1hg1f3n
+images.feature-mockup.png action not found
+
+Action not found
+Action images.feature-mockup.png could not be found. Error raised is Controller controllers.images.feature-mockup not found
+
+play.exceptions.ActionNotFoundException: Action images.feature-mockup.png not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:578)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:84)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.images.feature-mockup not found
+	... 3 more
+18:34:39,384 ERROR ~ 
+
+@7h1hg1f3o
+images.team-image1.jpg action not found
+
+Action not found
+Action images.team-image1.jpg could not be found. Error raised is Controller controllers.images.team-image1 not found
+
+play.exceptions.ActionNotFoundException: Action images.team-image1.jpg not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:578)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:84)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.images.team-image1 not found
+	... 3 more
+18:34:39,581 ERROR ~ 
+
+@7h1hg1f3p
+images.team-image2.jpg action not found
+
+Action not found
+Action images.team-image2.jpg could not be found. Error raised is Controller controllers.images.team-image2 not found
+
+play.exceptions.ActionNotFoundException: Action images.team-image2.jpg not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:578)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:84)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.images.team-image2 not found
+	... 3 more
+18:34:39,588 ERROR ~ 
+
+@7h1hg1f40
+images.team-image3.jpg action not found
+
+Action not found
+Action images.team-image3.jpg could not be found. Error raised is Controller controllers.images.team-image3 not found
+
+play.exceptions.ActionNotFoundException: Action images.team-image3.jpg not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:578)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:84)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.images.team-image3 not found
+	... 3 more
