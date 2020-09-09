@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>#{get 'title' /}</title>
+        <link rel="shortcut icon" href="@{'/public/image/faviconn.ico'}" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="@{'/public/recursos/bootstrap/css/bootstrap.css'}">
+        #{get 'moreScripts' /}
+    </head>
+    <body onload="myOnLoad()">
+
+        <nav class="navbar navbar-dark bg-info navbar-expand-lg sticky-top">
+            <a class="navbar-brand" href="#">
+                <img src="@{'/public/image/logo_48px.png'}" width="30" height="30" class="d-inline-block align-top" alt="">
+                Usuarios
+            </a>
+            <button class="navbar-toggler navbar-toggler-right text-light" type="button" data-toggle="collapse"
+                    data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <div class="navbar-nav mr-auto  ml-auto text-center">
+                    <a class="nav-item nav-link  active " href="@{Users.form}">Formulario</a>
+                </div>
+                <div class="navbar-nav mr-auto  ml-auto text-center">
+                    <a class="nav-item nav-link  active " href="@{Users.list}">Listar</a>
+                </div>
+                <div class="d-flex flex-row justify-content-center">
+                    <a class="btn btn-light mr-2" href="" role="button">Bienvenid@   </a>
+                    <a  class="btn btn-danger">Cerrar Usuario</a>
+                </div>  
+            </div>
+        </nav>
+
+        <div class="d-flex align-items-center" id="overlay">
+            <strong>Cargando ... espere un momento por favor</strong>
+            <div class="spinner-border ml-auto" role="status" aria-hidden="true"></div>
+        </div>
+
+
+        <div class="container  ">
+            #{doLayout /}
+        </div>
+
+        <script src="@{'/public/recursos/js/jquery-3.5.1.js'}"></script>
+        <script src="@{'/public/recursos/bootstrap/js/bootstrap.js'}"></script>
+        <script src="@{'/public/js/utility.js'}"></script>
+        #{get 'moreScripts' /}
+    </body>
+</html>

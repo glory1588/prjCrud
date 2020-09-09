@@ -1,0 +1,37 @@
+#{extends 'main.html' /}
+#{set title:'Listar Usuario' /}
+
+
+<form action="@{Users.list}">
+    Filtro: <input name="txtSearch" >
+    <button class="btn btn-info " type="submit" >Buscar</button>
+</form>
+<br/>
+
+<div class="table-responsive">
+    <table class="table  " >
+        <caption>Lista de Usuarios</caption>
+        <thead>
+            <tr> 
+                <th scope="col"></th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Correo</th>
+                <th scope="col">Edad</th>
+            </tr>
+        </thead>
+        <tbody id="tblEmpresas">
+            #{list items:listU, as:'u'}
+            <tr>
+                <td>  
+                    <a href="@{Users.edit(u.id)}"> <img  src=@{'/public/image/edit_16.png'} />  </a> 
+                    <a href="@{Users.delete(u.id)}"><img  src=@{'/public/image/trash_16.png'}  /></a>  
+                </td>
+                <td>${u.name}</td>
+                <td>${u.email}</td>
+                <td>${u.edad}</td>
+            </tr>
+            #{/list}
+        </tbody>
+    </table>
+</div>
+
