@@ -1,0 +1,25 @@
+#{extends 'main.html' /}
+#{set title:'Formulario' /}
+
+
+<form action="@{Users.save}">
+    <div class="form-group">
+        <label >Nombre</label>
+        <input type="text" class="form-control" name="usu.name" value="${usu?.name}"  required>
+    </div>
+    <div class="form-group">
+        <label >Email</label>
+        <input type="email" class="form-control" name="usu.email" value="${usu?.email}"  required>
+    </div>
+    <div class="form-group">
+        <label >Contraseña</label>
+        <input type="password" class="form-control" name="usu.contrasena" value="${usu?.contrasena}" required>
+    </div>
+    <div class="form-group">
+        <label > Año Nac.</label>
+        <input type="number" class="form-control" name="usu.anoNacimiento" value="${usu?.anoNacimiento}" required>
+    </div>
+    <input type="hidden" name="usu.id" value="${usu?.id}"><br/>
+   
+    <button class="btn btn-info btn-lg btn-block" type="submit" >Enviar</button>
+</form>
